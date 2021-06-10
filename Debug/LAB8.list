@@ -1217,13 +1217,13 @@ int main(void)
  8000e66:	498f      	ldr	r1, [pc, #572]	; (80010a4 <main+0x2f0>)
  8000e68:	488f      	ldr	r0, [pc, #572]	; (80010a8 <main+0x2f4>)
  8000e6a:	f002 fb45 	bl	80034f8 <siprintf>
-		  HAL_UART_Transmit(&huart2, (u_int8_t*)BDatabuffer, strlen(BDatabuffer),10);
- 8000e6e:	4888      	ldr	r0, [pc, #544]	; (8001090 <main+0x2dc>)
+		  HAL_UART_Transmit(&huart2, (u_int8_t*)ADatabuffer, strlen(ADatabuffer),10);
+ 8000e6e:	488e      	ldr	r0, [pc, #568]	; (80010a8 <main+0x2f4>)
  8000e70:	f7ff f9b6 	bl	80001e0 <strlen>
  8000e74:	4603      	mov	r3, r0
  8000e76:	b29a      	uxth	r2, r3
  8000e78:	230a      	movs	r3, #10
- 8000e7a:	4985      	ldr	r1, [pc, #532]	; (8001090 <main+0x2dc>)
+ 8000e7a:	498b      	ldr	r1, [pc, #556]	; (80010a8 <main+0x2f4>)
  8000e7c:	4885      	ldr	r0, [pc, #532]	; (8001094 <main+0x2e0>)
  8000e7e:	f001 fc1e 	bl	80026be <HAL_UART_Transmit>
 	  }

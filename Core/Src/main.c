@@ -131,7 +131,7 @@ int main(void)
 	  if(inputchar > 0)
 	  {
 		  sprintf(ADatabuffer,"%c\r\n",inputchar);
-		  HAL_UART_Transmit(&huart2, (u_int8_t*)BDatabuffer, strlen(BDatabuffer),10);
+		  HAL_UART_Transmit(&huart2, (u_int8_t*)ADatabuffer, strlen(ADatabuffer),10);
 	  }
 	  switch (State_Now)
 	  {
